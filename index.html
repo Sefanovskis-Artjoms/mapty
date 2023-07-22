@@ -35,7 +35,67 @@
   <body>
     <div class="sidebar">
       <img src="logo.png" alt="Logo" class="logo" />
+      <div class="options-panel">
+        <button class="btn-options delete-all-workouts">
+          <span class="options-panel-logo"></span>
+          <span class="options-panel-text">Delete all workouts</span>
+        </button>
+        <button class="btn-options see-all-workouts">
+          <span class="options-panel-logo"></span>
+          <span class="options-panel-text">See all workouts</span>
+        </button>
 
+        <select name="wokrout-type-selection">
+          <option value="both">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">All</span>
+          </option>
+          <option value="walking">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">Walking</span>
+          </option>
+          <option value="cycling">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">Cycling</span>
+          </option>
+        </select>
+
+        <select name="wokrout-order-selection">
+          <option value="descending">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">Descending</span>
+          </option>
+          <option value="ascending">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">Ascending</span>
+          </option>
+        </select>
+
+        <select name="workout-field-selection">
+          <option value="distance">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">Distance</span>
+          </option>
+          <option value="duration">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">Duration</span>
+          </option>
+          <option value="pace">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">Pace</span>
+          </option>
+          <option value="cadence">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">Cadence</span>
+          </option>
+          <option value="elevation">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">Elevation Gain</span>
+          </option>
+        </select>
+
+        <button class="btn-options apply-search">Apply</button>
+      </div>
       <ul class="workouts">
         <form class="form hidden">
           <div class="form__row">

@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   color: var(--color-light--2);
   font-weight: 400;
   line-height: 1.6;
@@ -53,6 +53,89 @@ a:visited {
   height: 5.2rem;
   align-self: center;
   margin-bottom: 4rem;
+}
+
+.btn-options {
+  padding: 1.2rem 0.6rem;
+  background-color: var(--color-dark--2);
+  border: none;
+  border-radius: 3px;
+  color: var(--color-light--2);
+  font-weight: 300;
+}
+
+.btn-options:hover {
+  scale: 1.015;
+}
+
+.btn-options:active {
+  scale: 1;
+}
+
+.select-options {
+  padding: 1.2rem 0.6rem;
+  background-color: var(--color-dark--2);
+  border: none;
+  border-radius: 3px;
+  color: var(--color-light--2);
+  font-weight: 300;
+}
+
+.options-panel-logo {
+  margin-right: 0.6rem;
+}
+
+.options-label {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  align-self: center;
+  text-align: center;
+}
+
+.options-panel {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  row-gap: 1.8rem;
+  column-gap: 0.6rem;
+  margin-bottom: 2.8rem;
+}
+
+.delete-all-workouts {
+  grid-column: 1/6;
+}
+
+.see-all-workouts {
+  grid-column: 8/13;
+}
+
+.wokrout-order-selection {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.workout-field-selection-label {
+  grid-row: 2/3;
+  grid-column: 2/4;
+}
+
+.workout-field-selection {
+  grid-row: 2/3;
+  grid-column: 4/8;
+}
+
+.workout-type-selection-label {
+  grid-row: 2/3;
+  grid-column: 8/9;
+}
+
+.workout-type-selection {
+  grid-row: 2/3;
+  grid-column: 9/11;
+}
+
+.apply-search {
+  grid-row: 2/3;
+  grid-column: 11/13;
 }
 
 .workouts {

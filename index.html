@@ -10,9 +10,13 @@
       src="https://kit.fontawesome.com/7cac6f5ac1.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/7cac6f5ac1.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -37,41 +41,43 @@
       <img src="logo.png" alt="Logo" class="logo" />
       <div class="options-panel">
         <button class="btn-options delete-all-workouts">
-          <span class="options-panel-logo"></span>
+          <span class="options-panel-logo">
+            <i class="fas fa-trash-alt"></i>
+          </span>
           <span class="options-panel-text">Delete all workouts</span>
         </button>
         <button class="btn-options see-all-workouts">
-          <span class="options-panel-logo"></span>
+          <span class="options-panel-logo"><i class="fas fa-eye"></i></span>
           <span class="options-panel-text">See all workouts</span>
         </button>
 
-        <select name="wokrout-type-selection">
-          <option value="both">
-            <span class="options-panel-logo"></span>
-            <span class="options-panel-text">All</span>
-          </option>
-          <option value="walking">
-            <span class="options-panel-logo"></span>
-            <span class="options-panel-text">Walking</span>
-          </option>
-          <option value="cycling">
-            <span class="options-panel-logo"></span>
-            <span class="options-panel-text">Cycling</span>
-          </option>
-        </select>
+        <button
+          name="wokrout-order-selection"
+          class="btn-options wokrout-order-selection"
+        >
+          <span class="descending">
+            <i class="fas fa-sort-amount-down"></i>
+          </span>
+          <!-- <span class="descending">
+            <i class="fas fa-sort-amount-up"></i>
+          </span> -->
+        </button>
 
-        <select name="wokrout-order-selection">
-          <option value="descending">
-            <span class="options-panel-logo"></span>
-            <span class="options-panel-text">Descending</span>
-          </option>
-          <option value="ascending">
-            <span class="options-panel-logo"></span>
-            <span class="options-panel-text">Ascending</span>
-          </option>
-        </select>
+        <label
+          for="workout-field-selection"
+          class="options-label workout-field-selection-label"
+        >
+          Order by field:
+        </label>
 
-        <select name="workout-field-selection">
+        <select
+          id="workout-field-selection"
+          class="select-options workout-field-selection"
+        >
+          <option value="date">
+            <span class="options-panel-logo"></span>
+            <span class="options-panel-text">Date</span>
+          </option>
           <option value="distance">
             <span class="options-panel-logo"></span>
             <span class="options-panel-text">Distance</span>
@@ -91,6 +97,28 @@
           <option value="elevation">
             <span class="options-panel-logo"></span>
             <span class="options-panel-text">Elevation Gain</span>
+          </option>
+        </select>
+
+        <label
+          for="workout-type-selection"
+          class="options-label workout-type-selection-label"
+        >
+          Type:
+        </label>
+
+        <select
+          id="workout-type-selection"
+          class="select-options workout-type-selection"
+        >
+          <option value="both">
+            <span class="options-panel-text">All</span>
+          </option>
+          <option value="walking">
+            <span class="options-panel-text">Walking</span>
+          </option>
+          <option value="cycling">
+            <span class="options-panel-text">Cycling</span>
           </option>
         </select>
 
